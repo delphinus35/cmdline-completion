@@ -25,11 +25,11 @@ let loaded_cmdline_completion = 1
 " map key
 "
 if !hasmapto('<Plug>CmdlineCompletionBackward','c')
-    cmap <unique> <silent> <C-P> <Plug>CmdlineCompletionBackward
+    cmap <unique> <silent> <C-K> <Plug>CmdlineCompletionBackward
 endif
 
 if !hasmapto('<Plug>CmdlineCompletionForward','c')
-    cmap <unique> <silent> <C-N> <Plug>CmdlineCompletionForward
+    cmap <unique> <silent> <C-J> <Plug>CmdlineCompletionForward
 endif
 
 cnoremap <silent> <Plug>CmdlineCompletionBackward <C-\>e<SID>CmdlineCompletion(1)<CR>
